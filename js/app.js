@@ -32,6 +32,12 @@ function App(){
 	const [truthCard,setTruthCard]=useState(null);
 	const [usedTruthCards,setUsedTruthCards]=useState([]);
 
+  // Sex Handbook A-Z state
+  const [handbookItem,setHandbookItem]=useState(null);
+
+  // Erotica Fiction state
+  const [eroticaItem,setEroticaItem]=useState(null);
+
   // Tag preferences – one object per player; all tags accepted by default
   const mkDefaultTagPrefs=()=>[0,1].map(()=>Object.fromEntries(TAGS.map(t=>[t.id,true])));
   const [tagPrefs,setTagPrefs]=useState(mkDefaultTagPrefs);
@@ -268,7 +274,13 @@ function App(){
 					>
 					  <span>🖤⃝🤍</span>
 					  <span>  Truth Cards </span>
-					</button>	
+					</button>
+          <button className="btn" onClick={()=>setScreen("handbookList")} style={{background:"#4A0404",color:"#666",border:"1px solid #252525",fontSize:"20px",padding:"13px",width:"100%",marginTop:"12px",display:"flex",alignItems:"center",justifyContent:"center",gap:"8px"}}>
+            <span>📖</span><span>  Sex Handbook A-Z </span>
+          </button>
+          <button className="btn" onClick={()=>setScreen("eroticaList")} style={{background:"#4A0404",color:"#666",border:"1px solid #252525",fontSize:"20px",padding:"13px",width:"100%",marginTop:"12px",display:"flex",alignItems:"center",justifyContent:"center",gap:"8px"}}>
+            <span>✍️</span><span>  Erotica Fiction </span>
+          </button>
         </div>
       )}
 
@@ -851,6 +863,117 @@ function App(){
 			    </button>
 			  </div>
 			)}
+
+      {/* ══ HANDBOOK LIST ══ */}
+      {screen==="handbookList"&&(
+        <div style={{animation:"fadeUp .35s ease",maxWidth:"540px",width:"100%"}}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"20px"}}>
+            <button onClick={()=>setScreen("setup")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
+            <span style={{color:"#888",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>Sex Handbook A-Z</span>
+            <div style={{width:"72px"}}/>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
+            {HANDBOOK_ITEMS.map((item,i)=>(
+              <button key={i} className="btn" onClick={()=>{setHandbookItem(item);setScreen("handbookDetail");}}
+                style={{background:"#111",border:"1px solid #1e1e1e",borderRadius:"14px",padding:"12px 14px",width:"100%",display:"flex",alignItems:"center",gap:"14px",textAlign:"left"}}>
+                <img src={"media/img/"+item.img} alt="" style={{width:"56px",height:"56px",borderRadius:"10px",objectFit:"cover",flexShrink:0,border:"1px solid #2a2a2a"}}/>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{color:"#eee",fontSize:"17px",fontWeight:"bold",marginBottom:"3px"}}>{item.title}</div>
+                  <div style={{color:"#666",fontSize:"12px",lineHeight:"1.4"}}>{item.sub1}</div>
+                  <div style={{color:"#555",fontSize:"12px",lineHeight:"1.4"}}>{item.sub2}</div>
+                </div>
+                <span style={{color:"#333",fontSize:"18px",flexShrink:0}}>›</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ══ HANDBOOK DETAIL ══ */}
+      {screen==="handbookDetail"&&handbookItem&&(
+        <div style={{animation:"fadeUp .35s ease",maxWidth:"540px",width:"100%"}}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"20px"}}>
+            <button onClick={()=>setScreen("handbookList")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
+            <span style={{color:"#888",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>Sex Handbook A-Z</span>
+            <div style={{width:"72px"}}/>
+          </div>
+          <div style={{background:"linear-gradient(135deg,#120500,#0d0d0d)",border:"1px solid #4A040433",borderRadius:"24px",padding:"24px",marginBottom:"14px"}}>
+            <div style={{display:"flex",alignItems:"center",gap:"16px",marginBottom:"20px"}}>
+              <img src={"media/img/"+handbookItem.img} alt="" style={{width:"72px",height:"72px",borderRadius:"14px",objectFit:"cover",border:"1px solid #3a1a1a"}}/>
+              <div>
+                <h1 style={{color:"#eee",fontSize:"1.5rem",margin:"0 0 4px",fontWeight:"bold"}}>{handbookItem.title}</h1>
+                <p style={{color:"#666",fontSize:"13px",margin:0}}>{handbookItem.sub1}</p>
+              </div>
+            </div>
+            {handbookItem.sections.map((sec,i)=>(
+              <div key={i} style={{marginBottom:"20px"}}>
+                <h2 style={{color:"#c87a00",fontSize:"1rem",letterSpacing:"1px",textTransform:"uppercase",margin:"0 0 8px",paddingBottom:"6px",borderBottom:"1px solid #2a1a00"}}>{sec.heading}</h2>
+                <p style={{color:"#aaa",fontSize:"14px",lineHeight:"1.75",margin:0}}>{sec.body}</p>
+                {sec.img&&<img src={"media/img/"+sec.img} alt="" style={{width:"100%",maxHeight:"160px",objectFit:"cover",borderRadius:"10px",marginTop:"10px",border:"1px solid #2a2a2a"}}/>}
+              </div>
+            ))}
+          </div>
+          <button className="btn" onClick={()=>setScreen("handbookList")} style={{background:"#1a1a1a",color:"#888",border:"1px solid #222",fontSize:"15px",padding:"15px",width:"100%"}}>
+            ← Back to Handbook
+          </button>
+        </div>
+      )}
+
+      {/* ══ EROTICA LIST ══ */}
+      {screen==="eroticaList"&&(
+        <div style={{animation:"fadeUp .35s ease",maxWidth:"540px",width:"100%"}}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"20px"}}>
+            <button onClick={()=>setScreen("setup")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
+            <span style={{color:"#888",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>Erotica Fiction</span>
+            <div style={{width:"72px"}}/>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
+            {EROTICA_ITEMS.map((item,i)=>(
+              <button key={i} className="btn" onClick={()=>{setEroticaItem(item);setScreen("eroticaDetail");}}
+                style={{background:"#111",border:"1px solid #1e1e1e",borderRadius:"14px",padding:"12px 14px",width:"100%",display:"flex",alignItems:"center",gap:"14px",textAlign:"left"}}>
+                <img src={"media/img/"+item.img} alt="" style={{width:"56px",height:"56px",borderRadius:"10px",objectFit:"cover",flexShrink:0,border:"1px solid #2a2a2a"}}/>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{color:"#eee",fontSize:"17px",fontWeight:"bold",marginBottom:"3px"}}>{item.title}</div>
+                  <div style={{color:"#666",fontSize:"12px",lineHeight:"1.4"}}>{item.sub1}</div>
+                  <div style={{color:"#555",fontSize:"12px",lineHeight:"1.4"}}>{item.sub2}</div>
+                </div>
+                <span style={{color:"#333",fontSize:"18px",flexShrink:0}}>›</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ══ EROTICA DETAIL ══ */}
+      {screen==="eroticaDetail"&&eroticaItem&&(
+        <div style={{animation:"fadeUp .35s ease",maxWidth:"540px",width:"100%"}}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"20px"}}>
+            <button onClick={()=>setScreen("eroticaList")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
+            <span style={{color:"#888",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>Erotica Fiction</span>
+            <div style={{width:"72px"}}/>
+          </div>
+          <div style={{background:"linear-gradient(135deg,#0d0012,#0d0d0d)",border:"1px solid #2a004433",borderRadius:"24px",padding:"24px",marginBottom:"14px"}}>
+            <div style={{display:"flex",alignItems:"center",gap:"16px",marginBottom:"20px"}}>
+              <img src={"media/img/"+eroticaItem.img} alt="" style={{width:"72px",height:"72px",borderRadius:"14px",objectFit:"cover",border:"1px solid #2a1a3a"}}/>
+              <div>
+                <h1 style={{color:"#eee",fontSize:"1.5rem",margin:"0 0 4px",fontWeight:"bold"}}>{eroticaItem.title}</h1>
+                <p style={{color:"#666",fontSize:"13px",margin:0}}>{eroticaItem.sub1}</p>
+              </div>
+            </div>
+            {eroticaItem.sections.map((sec,i)=>(
+              <div key={i} style={{marginBottom:"20px"}}>
+                <h2 style={{color:"#aa44ff",fontSize:"1rem",letterSpacing:"1px",textTransform:"uppercase",margin:"0 0 8px",paddingBottom:"6px",borderBottom:"1px solid #1a0033"}}>{sec.heading}</h2>
+                <p style={{color:"#bbb",fontSize:"14px",lineHeight:"1.85",margin:0,fontStyle:sec.italic?"italic":"normal"}}>{sec.body}</p>
+                {sec.img&&<img src={"media/img/"+sec.img} alt="" style={{width:"100%",maxHeight:"160px",objectFit:"cover",borderRadius:"10px",marginTop:"10px",border:"1px solid #2a2a2a"}}/>}
+              </div>
+            ))}
+          </div>
+          <button className="btn" onClick={()=>setScreen("eroticaList")} style={{background:"#1a1a1a",color:"#888",border:"1px solid #222",fontSize:"15px",padding:"15px",width:"100%"}}>
+            ← Back to Stories
+          </button>
+        </div>
+      )}
+
     </div>
   );
 }
