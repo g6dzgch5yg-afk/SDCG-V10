@@ -133,11 +133,11 @@ const HANDBOOK_ITEMS = [
 // ── Erotica Fiction ─────────────────────────────────────────────────────────
 const EROTICA_ITEMS = [
   {
-    "title": "Story A — The Late Train",
-    "img": "er_a.jpg",
-    "sub1": "A stranger. A glance. A decision.",
-    "sub2": "Contemporary romance · Short read",
-    "contentFile": "content/fiction/the-late-train.txt",
+    "title": "The College Girls",
+    "img": "bex1.jpg",
+    "sub1": "Two Girls. Her first time. An awakening.",
+    "sub2": "Sapphic Pleasure · Short read",
+    "contentFile": "content/fiction/becs_1.txt",
     "sections": []
   },
   {
