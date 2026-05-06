@@ -1,4 +1,4 @@
-const CACHE = 'challenge-cards-v13';
+const CACHE = 'challenge-cards-v14';
 const ASSETS = [
   './index.html',
   './manifest.json',
