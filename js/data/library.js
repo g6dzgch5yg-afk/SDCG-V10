@@ -133,10 +133,10 @@ const HANDBOOK_ITEMS = [
 // ── Erotica Fiction ─────────────────────────────────────────────────────────
 const EROTICA_ITEMS = [
   {
-    "title": "The College Girls",
-    "img": "er_a.jpg",
-    "sub1": "Two Girls. Her first time. An awakening.",
-    "sub2": "Sapphic Pleasure · Short read",
+    "title": "Story A - The College Girls",
+    "img": "b01_lesbian.svg",
+    "sub1": "New roommate. Her first time. An awakening.",
+    "sub2": "Sapphic Thrills · Short read",
     "contentFile": "content/fiction/becs_1.txt",
     "sections": []
   },
