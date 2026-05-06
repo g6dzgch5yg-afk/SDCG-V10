@@ -1149,7 +1149,7 @@ function App(){
             <div style={{fontSize:"52px",lineHeight:1,marginBottom:"18px",filter:"drop-shadow(0 0 12px #ff443388)"}}>⚠️</div>
             <p style={{color:"#cc3333",fontSize:"18px",fontWeight:"bold",letterSpacing:"1.5px",textTransform:"uppercase",margin:"0 0 14px",fontFamily:"'Georgia',serif"}}>Content Warning</p>
             <p style={{color:"#bbb",fontSize:"14px",lineHeight:"1.75",margin:"0 0 10px"}}>
-              This section may contain <strong style={{color:"#eee"}}>extremely graphic sexual imagery</strong>, including drawings, photographs and AI\u2011generated images of an explicit adult nature.
+              This section may contain <strong style={{color:"#eee"}}>extremely graphic sexual imagery</strong>, including drawings, photographs and AI generated images of an explicit adult nature.
             </p>
             <p style={{color:"#888",fontSize:"13px",lineHeight:"1.6",margin:"0 0 28px"}}>
               You must be <strong style={{color:"#ccc"}}>18 years of age or older</strong> and comfortable with adult content to continue. If you are unsure or uncomfortable, please return to the main screen.
