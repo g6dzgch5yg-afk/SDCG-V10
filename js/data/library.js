@@ -133,10 +133,10 @@ const HANDBOOK_ITEMS = [
 // ── Erotica Fiction ─────────────────────────────────────────────────────────
 const EROTICA_ITEMS = [
   {
-    "title": "The College Girls",
+    "title": "The College Girls Pt 1",
     "img": "b01_lesbian.svg",
     "sub1": "New roommate. Her first time. An awakening.",
-    "sub2": "Sapphic Thrills · Short read",
+    "sub2": "Sapphic Thrills · Short read · AI Generated",
     "contentFile": "content/fiction/becs_1.txt",
     "sections": []
   },
@@ -144,7 +144,7 @@ const EROTICA_ITEMS = [
     "title": "Amy's Sunlounger",
     "img": "b02_hetero.svg",
     "sub1": "Voyeur. Outdoor Sex. Tease.",
-    "sub2": "Dominant woman · Short read",
+    "sub2": "Dominant woman · Short read · AI Generated",
     "contentFile": "content/fiction/sunlounger.txt",
     "sections": []
   },
@@ -152,7 +152,7 @@ const EROTICA_ITEMS = [
     "title": "Altitude Adjustment",
     "img": "b02_hetero.svg",
     "sub1": "Nervous Flyer. Confident Man. New Experience.",
-    "sub2": "Join the mile-high club · Short read",
+    "sub2": "Join the mile-high club · Short read · AI Generated",
     "contentFile": "content/fiction/planestory.txt",
     "sections": []
   },
@@ -160,20 +160,20 @@ const EROTICA_ITEMS = [
     "title": "The Art Museum",
     "img": "b03_kinky.svg",
     "sub1": "An artist. A virgin. A bondage fetish.",
-    "sub2": "BDSM kinks · Medium read",
+    "sub2": "BDSM kinks · Medium read · AI Generated",
     "contentFile": "content/fiction/artmuseum.txt",
     "sections": []
   },
   {
-    "title": "Story E — Rain",
-    "img": "er_e.jpg",
-    "sub1": "Stranded. Together. For the first time.",
-    "sub2": "First encounter romance · Short read",
+    "title": "The College Girls Pt 2",
+    "img": "b01_lesbian.svg",
+    "sub1": "Lesbian.  Group.  Games",
+    "sub2": "Sapphic Thrills · Short read · AI Generated ",
     "contentFile": "content/fiction/rain.txt",
     "sections": []
   },
   {
-    "title": "Story F — The Appointment",
+    "title": "Story F Placeholder",
     "img": "er_f.jpg",
     "sub1": "Professional lines. Personal feelings.",
     "sub2": "Forbidden tension romance · Short read",
@@ -181,7 +181,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story G — By the Sea",
+    "title": "Story G Placeholder",
     "img": "er_g.jpg",
     "sub1": "A holiday cottage. End of summer.",
     "sub2": "Romantic getaway · Short read",
@@ -189,7 +189,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story H — The Library",
+    "title": "Story H Placeholder",
     "img": "er_h.jpg",
     "sub1": "A quiet place. An unexpected connection.",
     "sub2": "Slow burn literary romance · Short read",
@@ -197,7 +197,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story I — New Year",
+    "title": "Story I Placeholder",
     "img": "er_i.jpg",
     "sub1": "Midnight. A decision. A kiss.",
     "sub2": "Celebration romance · Short read",
@@ -205,7 +205,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story J — The Road Trip",
+    "title": "Story J Placeholder",
     "img": "er_j.jpg",
     "sub1": "Miles of open road. Nowhere to hide.",
     "sub2": "Adventure romance · Short read",
@@ -213,7 +213,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story K — After the Exhibition",
+    "title": "Story K Placeholder",
     "img": "er_k.jpg",
     "sub1": "Art. Champagne. An honest conversation.",
     "sub2": "Cultural romance · Short read",
@@ -221,7 +221,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story L — Letters",
+    "title": "Story L Placeholder",
     "img": "er_l.jpg",
     "sub1": "Words on paper. An old-fashioned love.",
     "sub2": "Epistolary romance · Short read",
@@ -229,7 +229,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story M — The Cabin",
+    "title": "Story M Placeholder",
     "img": "er_m.jpg",
     "sub1": "Deep winter. No signal. Just warmth.",
     "sub2": "Isolation romance · Short read",
@@ -237,7 +237,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story N — The Dance",
+    "title": "Story N Placeholder",
     "img": "er_n.jpg",
     "sub1": "A wedding. A slow song. A conversation.",
     "sub2": "Wedding romance · Short read",
@@ -245,7 +245,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story O — The Confession",
+    "title": "Story O Placeholder",
     "img": "er_o.jpg",
     "sub1": "Years of waiting. One honest moment.",
     "sub2": "Long friendship romance · Short read",
@@ -253,7 +253,7 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story P — The Morning After",
+    "title": "Story P Placeholder",
     "img": "er_p.jpg",
     "sub1": "Waking up. Choosing to stay.",
     "sub2": "Tender aftermath romance · Short read",
