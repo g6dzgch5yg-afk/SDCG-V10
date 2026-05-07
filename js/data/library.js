@@ -189,11 +189,11 @@ const EROTICA_ITEMS = [
     "sections": []
   },
   {
-    "title": "Story F Placeholder",
-    "img": "er_f.jpg",
-    "sub1": "Professional lines. Personal feelings.",
-    "sub2": "Forbidden tension romance · Short read",
-    "contentFile": "content/fiction/the-appointment.txt",
+    "title": "The Vampire",
+    "img": "b04_supernatural.svg",
+    "sub1": "A Barmaid. A Wealthy Stranger",
+    "sub2": "Vampire Lust, Violence · Medium read",
+    "contentFile": "content/fiction/vampire.txt",
     "sections": []
   },
   {
