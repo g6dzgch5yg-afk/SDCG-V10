@@ -9,11 +9,11 @@ const HANDBOOK_ITEMS = [
     "sections": []
   },
   {
-    "title": "Example B — Body Language",
+    "title": "Masturbation",
     "img": "hb_b.jpg",
-    "sub1": "Reading unspoken signals",
-    "sub2": "Desire, comfort & hesitation cues",
-    "contentFile": "content/handbook/body-language.txt",
+    "sub1": "Solo Time and Mutual Masturbation",
+    "sub2": "Guides for better 'me time'",
+    "contentFile": "content/handbook/masturbation.txt",
     "sections": []
   },
   {
@@ -127,7 +127,23 @@ const HANDBOOK_ITEMS = [
     "sub2": "An exercise in mutual exploration",
     "contentFile": "content/handbook/pleasure-mapping.txt",
     "sections": []
-  }
+  },
+  {
+    "title": "Example Q — Queening",
+    "img": "hb_p.jpg",
+    "sub1": "Discovering your body together",
+    "sub2": "An exercise in mutual exploration",
+    "contentFile": "content/handbook/pleasure-mapping.txt",
+    "sections": []
+  },
+  {
+    "title": "Example R — Role Play",
+    "img": "hb_p.jpg",
+    "sub1": "Discovering your body together",
+    "sub2": "An exercise in mutual exploration",
+    "contentFile": "content/handbook/pleasure-mapping.txt",
+    "sections": []
+  },
 ];
 
 // ── Erotica Fiction ─────────────────────────────────────────────────────────
