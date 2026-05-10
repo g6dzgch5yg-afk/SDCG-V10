@@ -58,7 +58,7 @@ The tattoos sprawled across Jenny's torso made both Nell and Bex gasp — a swir
 
 Bex watched, transfixed, as Nell’s mouth worked over Jenny’s nipple, the ink swirling around it like a target. Jenny’s fingers tightened in Nell’s hair, her hips rolling forward with a slow, deliberate grind against Nell’s thigh. The air in the room started smelling like sambuca and sweat.
 
-Jenny’s gaze snapped to Bex, dark and hungry. “You Next,” she murmured, licking her lips. She pulled Nell’s face up for a bruising kiss, then shoved her onto her back with a grin. “Pay up, cutie.” Bex crawled across the floor, her shorts riding low on her hips, and move her mouth to Nell's first lick against Bex’ nipple drew a gasp—hot, wet, relentless. Bex’s teeth grazed the peak, and Nell arched off the floor.
+Jenny’s gaze snapped to Bex, dark and hungry. “You Next,” she murmured, licking her lips. She turned and pulled Nell’s face up for a bruising kiss, then shoved her onto her back with a grin. “Pay up, cutie.” Bex crawled across the floor, her shorts riding low on her hips, and move her mouth to Nell's breast. first lick against Bex’ nipple drew a gasp—hot, wet, relentless. Bex’s teeth grazed the peak, and Nell arched off the floor, nipples hardening at the sensation. 
 
 Jenny watched for a moment longer, then stood up, shimmying her sweatpants down her hips with a smirk as Bex's gaze went to her. *No underwear!* Bex’s breath hitched at the sight of her, totally bare except for the ink and the flush spreading across her chest. Jenny knelt on the floor, straddling Nell’s thighs, and reached for Bex’ hand. “You’re overdressed,” she murmured, guiding Bex’ fingers to the button of her shorts.
 
