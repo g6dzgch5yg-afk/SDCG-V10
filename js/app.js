@@ -298,7 +298,7 @@ function App(){
           </button>
           <button className="btn" onClick={startGame} style={{background:"#eee",color:"#080808",fontSize:"25px",padding:"20px 40px",width:"100%"}}>😈 Start Game 😈</button>
           <p style={{color:"#444",fontSize:"26px",letterSpacing:"1.5px",textTransform:"uppercase",marginTop:"32px",marginBottom:"0"}}>Simple Mini Games</p>
-          <button className="btn" onClick={()=>setCautionData({title:"Sex Position Chooser",description:"This section contains explicit illustrated sexual positions including Oral, Vaginal, Anal and Group content. It is intended for adults only.",nextScreen:"positionSelect"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+          <button className="btn" onClick={()=>setCautionData({title:"Sex Position Chooser",description:"This section contains explicit illustrated or photographed sexual positions including Oral, Vaginal, Anal and Group content. It is intended for adults only.",nextScreen:"positionSelect"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
               <span>😈🔥</span><span>Sex Position Chooser</span>
             </div>
@@ -316,7 +316,7 @@ function App(){
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>A curated set of guidebooks for sexual health and knowledge.</p>
           </button>
-          <button className="btn" onClick={()=>setCautionData({title:"Erotica Fiction",description:"This section contains a curated series of graphic and explicit erotic fiction written for adults. The content is sexually explicit in nature and intended for mature audiences only.",nextScreen:"eroticaList"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+          <button className="btn" onClick={()=>setCautionData({title:"Erotica Fiction",description:"This section contains a series of graphic and sexually explicit erotic fiction written for adults. The content is sexually explicit in nature and intended for mature audiences only.",nextScreen:"eroticaList"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
               <span>✍️</span><span>Erotica Fiction</span>
             </div>
@@ -706,7 +706,7 @@ function App(){
             <div style={{textAlign:"center",marginBottom:"8px"}}>
               <div style={{fontSize:"2.4rem",marginBottom:"12px"}}>😈🔥</div>
               <h2 style={{color:"#eee",fontSize:"1.4rem",margin:"0 0 6px",fontWeight:"bold"}}>Choose Your Group Size</h2>
-              <p style={{color:"#555",fontSize:"13px",margin:0}}>Select below then hit Start to spin the wheel</p>
+              <p style={{color:"#555",fontSize:"13px",margin:0}}>Select below then hit Start to begin</p>
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:"12px",width:"100%",maxWidth:"340px"}}>
               {[
@@ -1042,7 +1042,7 @@ function App(){
               {cautionData.description}
             </p>
             <p style={{color:"#666",fontSize:"13px",lineHeight:"1.6",margin:"0 0 28px"}}>
-              By proceeding you confirm you are 18 years of age or older and consent to viewing explicit adult content.
+              By proceeding you confirm you are 18 years of age or older and consent to viewing explicit or pornographic images.
             </p>
             {/* Buttons */}
             <button
