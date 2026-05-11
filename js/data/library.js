@@ -152,7 +152,7 @@ const EROTICA_ITEMS = [
     "title": "A Chance Encounter",
     "img": "b02_hetero.svg",
     "sub1": "A fantasy, A daydream, A stranger.",
-    "sub2": "By Jo Benfield · 3 minute read",
+    "sub2": "Story: Jo Benfield · Images: AI · 3 minute read",
     "contentFile": "content/fiction/chance.md",
     "sections": []
   },
