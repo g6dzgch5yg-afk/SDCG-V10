@@ -150,8 +150,8 @@ const HANDBOOK_ITEMS = [
 const EROTICA_ITEMS = [
    {
     "title": "A Chance Encounter",
-    "img": "er_g.jpg",
-    "sub1": "A Fantasy, A daydream, A stranger.",
+    "img": "b02_hetero.svg",
+    "sub1": "A fantasy, A daydream, A stranger.",
     "sub2": "By Jo Benfield · 3 minute read",
     "contentFile": "content/fiction/chance.md",
     "sections": []
