@@ -148,6 +148,14 @@ const HANDBOOK_ITEMS = [
 
 // ── Erotica Fiction ─────────────────────────────────────────────────────────
 const EROTICA_ITEMS = [
+   {
+    "title": "A Chance Encounter",
+    "img": "er_g.jpg",
+    "sub1": "A Fantasy, A daydream, A stranger.",
+    "sub2": "By Jo Benfield · 3 minute read",
+    "contentFile": "content/fiction/chance.md",
+    "sections": []
+  },
   {
     "title": "The College Girls Pt.1",
     "img": "b01_lesbian.svg",
