@@ -40,9 +40,6 @@ function App(){
   const [libraryLoading,setLibraryLoading]=useState(false);
   const [libraryError,setLibraryError]=useState("");
 
-  // Caution screen state — { title, description, nextScreen } or null
-  const [cautionData,setCautionData]=useState(null);
-
   // Tag preferences – one object per player; all tags accepted by default
   const mkDefaultTagPrefs=()=>[0,1].map(()=>Object.fromEntries(TAGS.map(t=>[t.id,true])));
   const [tagPrefs,setTagPrefs]=useState(mkDefaultTagPrefs);
@@ -298,7 +295,7 @@ function App(){
           </button>
           <button className="btn" onClick={startGame} style={{background:"#eee",color:"#080808",fontSize:"25px",padding:"20px 40px",width:"100%"}}>😈 Start Game 😈</button>
           <p style={{color:"#444",fontSize:"26px",letterSpacing:"1.5px",textTransform:"uppercase",marginTop:"32px",marginBottom:"0"}}>Simple Mini Games</p>
-          <button className="btn" onClick={()=>setCautionData({title:"Sex Position Chooser",description:"This section contains explicit illustrated or photographed sexual positions including Oral, Vaginal, Anal and Group content. It is intended for adults only.",nextScreen:"positionSelect"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+          <button className="btn" onClick={openPosition} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
               <span>😈🔥</span><span>Sex Position Chooser</span>
             </div>
@@ -310,13 +307,13 @@ function App(){
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>A simple game of truths.  Great for spicy conversation.</p>
           </button>
-          <button className="btn" onClick={()=>setCautionData({title:"Sex Handbook A-Z",description:"This section contains graphic and explicit content covering sexual health topics including illustrated guides and detailed adult material. It is intended for adults only.",nextScreen:"handbookList"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+          <button className="btn" onClick={()=>setScreen("handbookList")} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
               <span>📖</span><span>Sex Handbook A-Z</span>
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>A curated set of guidebooks for sexual health and knowledge.</p>
           </button>
-          <button className="btn" onClick={()=>setCautionData({title:"Erotica Fiction",description:"This section contains a series of graphic and sexually explicit erotic fiction written for adults. The content is sexually explicit in nature and intended for mature audiences only.",nextScreen:"eroticaList"})} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+          <button className="btn" onClick={()=>setScreen("eroticaList")} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
               <span>✍️</span><span>Erotica Fiction</span>
             </div>
@@ -706,7 +703,7 @@ function App(){
             <div style={{textAlign:"center",marginBottom:"8px"}}>
               <div style={{fontSize:"2.4rem",marginBottom:"12px"}}>😈🔥</div>
               <h2 style={{color:"#eee",fontSize:"1.4rem",margin:"0 0 6px",fontWeight:"bold"}}>Choose Your Group Size</h2>
-              <p style={{color:"#555",fontSize:"13px",margin:0}}>Select below then hit Start to begin</p>
+              <p style={{color:"#555",fontSize:"13px",margin:0}}>Select below then hit Start to spin the wheel</p>
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:"12px",width:"100%",maxWidth:"340px"}}>
               {[
@@ -913,19 +910,40 @@ function App(){
             <span style={{color:"#888",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>Sex Handbook A-Z</span>
             <div style={{width:"72px"}}/>
           </div>
-          <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
-            {HANDBOOK_ITEMS.map((item,i)=>(
-              <button key={i} className="btn" onClick={()=>openHandbookItem(item)}
-                style={{background:"#111",border:"1px solid #1e1e1e",borderRadius:"14px",padding:"12px 14px",width:"100%",display:"flex",alignItems:"center",gap:"14px",textAlign:"left"}}>
-                <img src={"media/img/"+item.img} alt="" style={{width:"56px",height:"56px",borderRadius:"10px",objectFit:"cover",flexShrink:0,border:"1px solid #2a2a2a"}}/>
-                <div style={{flex:1,minWidth:0}}>
-                  <div style={{color:"#eee",fontSize:"17px",fontWeight:"bold",marginBottom:"3px"}}>{item.title}</div>
-                  <div style={{color:"#666",fontSize:"12px",lineHeight:"1.4"}}>{item.sub1}</div>
-                  <div style={{color:"#555",fontSize:"12px",lineHeight:"1.4"}}>{item.sub2}</div>
+          <div style={{display:"flex",flexDirection:"column",gap:"18px"}}>
+            {(()=>{
+              // Group items by letter (uses item.letter if set, else first char of title)
+              const groups={};
+              HANDBOOK_ITEMS.forEach(item=>{
+                const letter=(item.letter||(item.title[0]||"#")).toUpperCase();
+                if(!groups[letter])groups[letter]=[];
+                groups[letter].push(item);
+              });
+              // Sort letters A-Z, with # (misc/placeholder) at the end
+              return Object.keys(groups).sort((a,b)=>{
+                if(a==="#")return 1;
+                if(b==="#")return -1;
+                return a.localeCompare(b);
+              }).map(letter=>(
+                <div key={letter}>
+                  <div style={{color:"#7a1a1a",fontSize:"20px",fontWeight:"bold",letterSpacing:"3px",paddingBottom:"6px",borderBottom:"1px solid #2a1a1a",marginBottom:"8px"}}>{letter}</div>
+                  <div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
+                    {groups[letter].map((item,i)=>(
+                      <button key={i} className="btn" onClick={()=>openHandbookItem(item)}
+                        style={{background:"#111",border:"1px solid #1e1e1e",borderRadius:"14px",padding:"12px 14px",width:"100%",display:"flex",alignItems:"center",gap:"14px",textAlign:"left"}}>
+                        <img src={"media/img/"+item.img} alt="" style={{width:"56px",height:"56px",borderRadius:"10px",objectFit:"cover",flexShrink:0,border:"1px solid #2a2a2a"}}/>
+                        <div style={{flex:1,minWidth:0}}>
+                          <div style={{color:"#eee",fontSize:"17px",fontWeight:"bold",marginBottom:"3px"}}>{item.title}</div>
+                          <div style={{color:"#666",fontSize:"12px",lineHeight:"1.4"}}>{item.sub1}</div>
+                          <div style={{color:"#555",fontSize:"12px",lineHeight:"1.4"}}>{item.sub2}</div>
+                        </div>
+                        <span style={{color:"#333",fontSize:"18px",flexShrink:0}}>›</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-                <span style={{color:"#333",fontSize:"18px",flexShrink:0}}>›</span>
-              </button>
-            ))}
+              ));
+            })()}
           </div>
         </div>
       )}
@@ -1024,47 +1042,6 @@ function App(){
           <button className="btn" onClick={()=>setScreen("eroticaList")} style={{background:"#1a1a1a",color:"#888",border:"1px solid #222",fontSize:"15px",padding:"15px",width:"100%"}}>
             ← Back to Stories
           </button>
-        </div>
-      )}
-
-      {/* ══ CAUTION MODAL OVERLAY ══ */}
-      {cautionData&&(
-        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.88)",zIndex:9999,display:"flex",alignItems:"center",justifyContent:"center",padding:"20px",animation:"fadeUp .25s ease"}}>
-          <div style={{background:"#111",border:"2px solid #5a0000",borderRadius:"18px",padding:"32px 28px",maxWidth:"420px",width:"100%",textAlign:"center",boxShadow:"0 0 60px rgba(180,0,0,0.25)"}}>
-            {/* Warning icon + title */}
-            <div style={{fontSize:"48px",marginBottom:"12px"}}>⚠️</div>
-            <h2 style={{color:"#e22",margin:"0 0 6px",fontSize:"1.4rem",letterSpacing:"0.5px"}}>Adult Content Warning</h2>
-            <p style={{color:"#888",fontSize:"13px",margin:"0 0 18px",letterSpacing:"1px",textTransform:"uppercase"}}>{cautionData.title}</p>
-            {/* Divider */}
-            <div style={{height:"1px",background:"#2a2a2a",margin:"0 0 20px"}}/>
-            {/* Warning text */}
-            <p style={{color:"#ccc",fontSize:"15px",lineHeight:"1.7",margin:"0 0 8px"}}>
-              {cautionData.description}
-            </p>
-            <p style={{color:"#666",fontSize:"13px",lineHeight:"1.6",margin:"0 0 28px"}}>
-              By proceeding you confirm you are 18 years of age or older and consent to viewing explicit or pornographic images.
-            </p>
-            {/* Buttons */}
-            <button
-              className="btn"
-              onClick={()=>{
-                const next=cautionData.nextScreen;
-                setCautionData(null);
-                if(next==="positionSelect") openPosition();
-                else setScreen(next);
-              }}
-              style={{width:"100%",background:"#1a6b1a",border:"2px solid #2a9b2a",color:"#fff",fontSize:"17px",fontWeight:"bold",padding:"18px 16px",borderRadius:"12px",cursor:"pointer",marginBottom:"12px",letterSpacing:"0.3px"}}
-            >
-              ✅ OK, Please Proceed
-            </button>
-            <button
-              className="btn"
-              onClick={()=>{setCautionData(null);setScreen("setup");}}
-              style={{width:"100%",background:"#6b1a1a",border:"2px solid #a02020",color:"#fff",fontSize:"17px",fontWeight:"bold",padding:"18px 16px",borderRadius:"12px",cursor:"pointer",letterSpacing:"0.3px"}}
-            >
-              ❌ NO, Take me back to Home Page
-            </button>
-          </div>
         </div>
       )}
 
