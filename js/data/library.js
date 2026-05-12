@@ -10,7 +10,7 @@ const HANDBOOK_ITEMS = [
   },
   {
     "title": "Oral Sex - Cunnilingus",
-    "img": "h09_masturbation.svg",
+    "img": "h02_cunnilingus.svg",
     "sub1": "Oral sex guide to eating pussy.",
     "sub2": "How to give her great oral orgasms.",
     "contentFile": "content/handbook/or-cun.md",
