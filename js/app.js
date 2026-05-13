@@ -343,6 +343,12 @@ function App(){
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>A curated series of graphic and explicit erotic fiction.</p>
           </button>
+          <button className="btn" onClick={()=>setScreen("memoryGame")} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+            <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
+              <span>🃏</span><span>Memory Game</span>
+            </div>
+            <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>Flip and match pairs of faces. Can you clear the board?</p>
+          </button>
         </div>
       )}
 
@@ -1112,6 +1118,206 @@ function App(){
         </div>
       )}
 
+      {/* ══ MEMORY GAME ══ */}
+      {screen==="memoryGame"&&(()=>{
+        const FACES=Array.from({length:15},(_,i)=>`content/memory/face_${String(i+1).padStart(2,"0")}.jpg`);
+        const TOTAL_PAIRS=15;
+        return <MemoryGame faces={FACES} totalPairs={TOTAL_PAIRS} onBack={()=>setScreen("setup")}/>;
+      })()}
+
+    </div>
+  );
+}
+
+// ── Memory Game Component ──────────────────────────────────────────────────
+function MemoryGame({faces,totalPairs,onBack}){
+  const [deck,setDeck]=React.useState([]);
+  const [flipped,setFlipped]=React.useState([]);
+  const [matched,setMatched]=React.useState(new Set());
+  const [moves,setMoves]=React.useState(0);
+  const [locked,setLocked]=React.useState(false);
+  const [won,setWon]=React.useState(false);
+  const [showWin,setShowWin]=React.useState(false);
+  const fwRef=React.useRef(null);
+  const fwRaf=React.useRef(null);
+  const fwParticles=React.useRef([]);
+
+  function buildDeck(faceList){
+    const pairs=[];
+    for(let i=0;i<faceList.length;i++){pairs.push({id:i*2,faceIdx:i});pairs.push({id:i*2+1,faceIdx:i});}
+    for(let i=pairs.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pairs[i],pairs[j]]=[pairs[j],pairs[i]];}
+    return pairs;
+  }
+
+  function initGame(){
+    setDeck(buildDeck(faces));
+    setFlipped([]);
+    setMatched(new Set());
+    setMoves(0);
+    setLocked(false);
+    setWon(false);
+    setShowWin(false);
+    stopFW();
+  }
+
+  React.useEffect(()=>{initGame();},[]);
+
+  function tap(card){
+    if(locked||won)return;
+    if(matched.has(card.faceIdx))return;
+    if(flipped.find(c=>c.id===card.id))return;
+    if(flipped.length>=2)return;
+    const nf=[...flipped,card];
+    setFlipped(nf);
+    if(nf.length===2){
+      const newMoves=moves+1;
+      setMoves(newMoves);
+      setLocked(true);
+      if(nf[0].faceIdx===nf[1].faceIdx){
+        setTimeout(()=>{
+          setMatched(prev=>{
+            const nm=new Set(prev);
+            nm.add(nf[0].faceIdx);
+            if(nm.size===totalPairs){
+              setWon(true);
+              startFW();
+              setTimeout(()=>setShowWin(true),900);
+            }
+            return nm;
+          });
+          setFlipped([]);
+          setLocked(false);
+        },700);
+      } else {
+        setTimeout(()=>{setFlipped([]);setLocked(false);},1100);
+      }
+    }
+  }
+
+  // ── Fireworks ──
+  function startFW(){
+    const cv=fwRef.current;
+    if(!cv)return;
+    cv.width=window.innerWidth;cv.height=window.innerHeight;
+    const ctx=cv.getContext("2d");
+    fwParticles.current=[];
+    let lastBurst=0;
+    const cols=["#8b1a1a","#cc0000","#ff6b6b","#ff9999","#ffffff","#ffcccc","#ff3366"];
+    function burst(ts){
+      lastBurst=ts;
+      const x=Math.random()*cv.width,y=Math.random()*cv.height*0.6;
+      const col=cols[Math.floor(Math.random()*cols.length)];
+      for(let i=0;i<55;i++){
+        const a=(i/55)*Math.PI*2,sp=1.5+Math.random()*4;
+        fwParticles.current.push({x,y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-0.8,life:1,decay:0.016+Math.random()*0.018,color:col,sz:1.5+Math.random()*2.5});
+      }
+    }
+    function loop(ts){
+      if(!cv.parentElement){cancelAnimationFrame(fwRaf.current);return;}
+      ctx.fillStyle="rgba(10,10,15,0.16)";ctx.fillRect(0,0,cv.width,cv.height);
+      if(ts-lastBurst>360)burst(ts);
+      fwParticles.current=fwParticles.current.filter(p=>{
+        p.x+=p.vx;p.y+=p.vy;p.vy+=0.06;p.vx*=0.98;p.vy*=0.98;p.life-=p.decay;
+        if(p.life<=0)return false;
+        ctx.globalAlpha=p.life;ctx.fillStyle=p.color;
+        ctx.beginPath();ctx.arc(p.x,p.y,p.sz,0,Math.PI*2);ctx.fill();
+        return true;
+      });
+      ctx.globalAlpha=1;
+      fwRaf.current=requestAnimationFrame(loop);
+    }
+    fwRaf.current=requestAnimationFrame(loop);
+  }
+  function stopFW(){
+    if(fwRaf.current){cancelAnimationFrame(fwRaf.current);fwRaf.current=null;}
+    fwParticles.current=[];
+    const cv=fwRef.current;
+    if(cv){const ctx=cv.getContext("2d");ctx.clearRect(0,0,cv.width,cv.height);}
+  }
+  React.useEffect(()=>()=>stopFW(),[]);
+
+  const isFlipped=card=>!!flipped.find(c=>c.id===card.id)||matched.has(card.faceIdx);
+  const isMatched=card=>matched.has(card.faceIdx);
+
+  return(
+    <div style={{width:"100%",maxWidth:"520px",display:"flex",flexDirection:"column",minHeight:"100vh",background:"#0a0a0f"}}>
+      {/* Header */}
+      <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 14px",background:"#0d0d14",borderBottom:"1px solid #1a1a2a",flexShrink:0}}>
+        <button onClick={onBack} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
+        <div style={{display:"flex",gap:"20px"}}>
+          <div style={{textAlign:"center"}}>
+            <div style={{color:"#8b0000",fontSize:"20px",fontWeight:"bold",lineHeight:1}}>{moves}</div>
+            <div style={{color:"#444",fontSize:"10px",letterSpacing:"1px",textTransform:"uppercase"}}>Moves</div>
+          </div>
+          <div style={{textAlign:"center"}}>
+            <div style={{color:"#8b0000",fontSize:"20px",fontWeight:"bold",lineHeight:1}}>{matched.size}</div>
+            <div style={{color:"#444",fontSize:"10px",letterSpacing:"1px",textTransform:"uppercase"}}>Pairs</div>
+          </div>
+        </div>
+        <button onClick={initGame} style={{background:"none",border:"1px solid #333",color:"#666",fontSize:"10px",padding:"6px 10px",borderRadius:"4px",cursor:"pointer",fontFamily:"inherit",letterSpacing:"1px"}}>RESET</button>
+      </div>
+
+      {/* Grid */}
+      <div style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",padding:"10px"}}>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:"5px",width:"100%",maxWidth:"400px"}}>
+          {deck.map(card=>{
+            const flippedOrMatched=isFlipped(card);
+            const cardMatched=isMatched(card);
+            return(
+              <div key={card.id} onClick={()=>tap(card)}
+                style={{position:"relative",width:"100%",paddingBottom:"100%",cursor:flippedOrMatched?"default":"pointer",perspective:"500px"}}>
+                <div style={{
+                  position:"absolute",top:0,left:0,right:0,bottom:0,
+                  transformStyle:"preserve-3d",
+                  transition:"transform 0.4s ease",
+                  transform:flippedOrMatched?"rotateY(180deg)":"rotateY(0deg)",
+                  borderRadius:"6px"
+                }}>
+                  {/* Back face */}
+                  <div style={{
+                    position:"absolute",top:0,left:0,right:0,bottom:0,
+                    background:"#1a1020",border:"1.5px solid #2a1a3a",borderRadius:"6px",
+                    backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",
+                    display:"flex",alignItems:"center",justifyContent:"center",
+                    fontSize:"22px",color:"#8b000066",fontWeight:"900"
+                  }}>❤</div>
+                  {/* Front face */}
+                  <div style={{
+                    position:"absolute",top:0,left:0,right:0,bottom:0,
+                    background:"#0d0d14",
+                    border:cardMatched?"2px solid #8b0000":"1.5px solid #2a1a3a",
+                    boxShadow:cardMatched?"0 0 10px rgba(139,0,0,0.6)":"none",
+                    borderRadius:"6px",
+                    backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",
+                    transform:"rotateY(180deg)",
+                    overflow:"hidden"
+                  }}>
+                    <img src={faces[card.faceIdx]} alt="" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}}/>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Fireworks canvas */}
+      <canvas ref={fwRef} style={{display:won?"block":"none",position:"fixed",top:0,left:0,right:0,bottom:0,pointerEvents:"none",zIndex:100}}/>
+
+      {/* Win overlay */}
+      {showWin&&(
+        <div style={{position:"fixed",top:0,left:0,right:0,bottom:0,zIndex:200,display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",textAlign:"center",padding:"20px",background:"rgba(0,0,0,0.7)"}}>
+          <div style={{fontSize:"3rem",marginBottom:"12px"}}>🎉</div>
+          <div style={{fontSize:"2rem",fontWeight:"900",color:"#8b0000",marginBottom:"8px",letterSpacing:"2px"}}>PERFECT!</div>
+          <div style={{fontSize:"15px",color:"#888",marginBottom:"28px"}}>Completed in <span style={{color:"#fff",fontWeight:"bold"}}>{moves}</span> moves</div>
+          <button className="btn" onClick={initGame} style={{background:"#8b0000",border:"none",color:"#fff",fontWeight:"700",fontSize:"14px",letterSpacing:"2px",padding:"14px 32px",borderRadius:"8px",cursor:"pointer",marginBottom:"12px",width:"100%",maxWidth:"280px"}}>
+            PLAY AGAIN
+          </button>
+          <button className="btn" onClick={onBack} style={{background:"#141414",border:"1px solid #333",color:"#888",fontSize:"14px",padding:"12px 32px",borderRadius:"8px",cursor:"pointer",width:"100%",maxWidth:"280px"}}>
+            ← Back to Home
+          </button>
+        </div>
+      )}
     </div>
   );
 }
