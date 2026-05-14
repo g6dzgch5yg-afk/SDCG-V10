@@ -1,6 +1,6 @@
 ## One - Claimed
 
-img1 party-stand
+[image src="media/img/party-stand.jpeg" alt="Party Games"]
 
 It was not so much that he interrupted our conversation, he simply joined us. He slipped his arm around my wife’s waist and let his hand slide immediately under her thong to her ass cheek. She reacted in no way at all as if this was everyday normal behaviour.
 
@@ -34,7 +34,7 @@ I was now fully erect watching this developing situation.
 
 ## Two - The Observation Room
 
-img2 - party-hand
+[image src="media/img/party-hand.jpeg" alt="Party Games"]
 
 She stepped back a bit into him and out of her thong which was at her feet. As she bent forward to pick them up, the host moved his hand to her ass and gently inserted a fingertip into her bum.
 
@@ -121,7 +121,7 @@ Sure, it would be better to watch her with another woman, but this was her turn 
 
 I started gently rubbing my erection and soon my cock was slippery in my hand. I could see the button on the controls to share the experience. Since I had the sensation of been totally used by being made to watch my wife fucking another guy, maybe I should go all in and share the experience? Not yet.
 
-img3 - party-screen
+[image src="media/img/party-screen.jpeg" alt="Party Games"]
 
 Brian and Claudine appeared on one of the screens. My wife was still fully nude, that had not changed. The only addition was a glass of wine. The host had his arm around her waist with his hand gently resting on her ass.
 
@@ -163,7 +163,7 @@ While she was doing this he shrugged his shirt off. My wife eyed his erection hu
 
 He nodded at her briefly and she took his erection in her mouth and starting devouring it without hesitation, something she never did for me I thought eyeing my own ever hardening erection. I was rubbing steadily now.
 
-img4 - party-blow
+[image src="media/img/party-blow.jpeg" alt="Party Games"]
 
 The host let his head back as he enjoyed the fruits of my wife’s efforts. After several minutes of total pleasure, he pulled my wife’s head back and withdrew his drenched cock.
 
@@ -189,7 +189,7 @@ I could not see the smile on my wife’s face, but I was certain it was there.
 
 ‘Please continue’ the host requested of Melissa. She pushed her sleeves a little higher and got to work on my wife’s ass. Behind her Don loudly enjoyed his orgasm as his wife kept whipping.
 
-img5-party-whip
+[image src="media/img/party-whip.jpeg" alt="Party Games"]
 
 What a spectacle. Before Melissa could develop a sweat, Brian stopped the performance rather suddenly, untied my red assed woman and helped her off the bed. He replaced the glass in her hand and turned to address the crowd.
 
@@ -215,7 +215,7 @@ My wife’s orgasm seemed very loud with no other sounds audible. Only the grunt
 
 Then, as if bored, he quickened his pace and exploded inside Claudine filling her full of his energy. My wife lay there still enjoying the aftermath of her orgasm and his with a mixture of both of them coming out of her pussy.
 
-img6 - party-drip
+[image src="media/img/party-drip.jpeg" alt="Party Games"]
 
 He moved up the bed again and wiped his dripping penis on her tits and slapped them suddenly watching them move from side to side. He smiled and did it again, but harder. They too began to redden.
 
@@ -223,7 +223,7 @@ Watching my wife getting her semen covered tits slapped brought me over the edge
 
 He flipped her over without a word. From under the pillow he withdrew a large butt plug, applied lube and inserted it into Claudine’s ass with ease.
 
-img7-party-plug
+[image src="media/img/party-plug.jpeg" alt="Party Games"]
 
 ## Six - Leashed & Returned
 
@@ -243,7 +243,7 @@ Finally they arrived to where I was waiting beside the drinks table outside the 
 
 ‘I absolutely did’ I replied taking the leash he offered.
 
-img8 -party-leash
+[image src="media/img/party-leash.jpeg" alt="Party Games"]
 
 ‘Good, so did I’ he said moving my wife towards me with this hand on her nude red ass.
 
