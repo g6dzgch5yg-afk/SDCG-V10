@@ -2,7 +2,7 @@
 
 Claire Woodruff
 
-[image src="media/img/nose-header.jpeg" alt="Her Nose"]
+[image src="media/img/nose-header.png" alt="Her Nose"]
 
 ## One - Danni's Nose
 
