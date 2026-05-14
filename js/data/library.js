@@ -183,6 +183,16 @@ const EROTICA_ITEMS = [
     "contentFile": "content/fiction/predator-prey.md",
     "sections": []
   },
+ {
+    "category": "Group",
+    "title": "Party Games",
+    "img": "b05_group.svg",
+    "sub1": "A hedonistic sex party.",
+    "sub2": "Story: Jo Benfield · Images: AI",
+    "readTime": "15 minute read",
+    "contentFile": "content/fiction/party.md",
+    "sections": []
+  },
   {
     "category": "#",
     "title": "More Soon",
