@@ -323,7 +323,7 @@ function App(){
           <p style={{color:"#444",fontSize:"26px",letterSpacing:"1.5px",textTransform:"uppercase",marginTop:"32px",marginBottom:"0"}}>Hot Extras</p>
           <button className="btn" onClick={()=>{setWarnDest("positionSelect");setScreen("contentWarning");}} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
-              <span>😈🔥</span><span>Sex Position Chooser</span>
+              <span>😈🔥</span><span>Sex Position Cards</span>
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>Random sex positions. Oral, Vaginal, Anal and Group. .</p>
           </button>
@@ -347,7 +347,7 @@ function App(){
           </button>
           <button className="btn" onClick={()=>{setWarnDest("memoryTopicSelect");setScreen("contentWarning");}} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
             <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
-              <span>🍒</span><span>Memory Game</span>
+              <span>🍒</span><span>XXX Matching Pairs Game</span>
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>Flip and match pairs of naughty picture cards. Can you clear the board?</p>
           </button>
@@ -754,7 +754,7 @@ function App(){
         <div style={{animation:"fadeUp .35s ease",maxWidth:"520px",width:"100%",display:"flex",flexDirection:"column",minHeight:"calc(100vh - 40px)"}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"24px"}}>
             <button onClick={()=>setScreen("setup")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
-            <span style={{color:"#444",fontSize:"11px",letterSpacing:"1px",textTransform:"uppercase"}}>Sex Position Chooser</span>
+            <span style={{color:"#444",fontSize:"11px",letterSpacing:"1px",textTransform:"uppercase"}}>Sex Position Cards</span>
             <div style={{width:"72px"}}/>
           </div>
           <div style={{flex:1,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:"24px"}}>
@@ -1134,12 +1134,12 @@ function App(){
         <div style={{animation:"fadeUp .35s ease",maxWidth:"520px",width:"100%",display:"flex",flexDirection:"column",minHeight:"calc(100vh - 40px)"}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 0 10px"}}>
             <button onClick={()=>setScreen("setup")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
-            <span style={{color:"#444",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>Memory Game</span>
+            <span style={{color:"#444",fontSize:"13px",letterSpacing:"1px",textTransform:"uppercase"}}>XXX Matching Pairs Game</span>
             <span style={{width:"70px"}}/>
           </div>
           <p style={{color:"#555",fontSize:"13px",textAlign:"center",marginBottom:"24px",letterSpacing:"0.5px"}}>Choose a category to play</p>
           {[
-            {id:"faces",  label:"Breasts",   emoji:"😍", desc:"Match pairs of breasts"},
+            {id:"faces",  label:"Titties",   emoji:"😍", desc:"Match pairs of titties"},
             {id:"toys",   label:"Toys",    emoji:"🎀", desc:"Match pairs of sex toys"},
             {id:"dicks",  label:"Dicks",   emoji:"🍆", desc:"Match pairs of dicks"},
             {id:"pussies",label:"Pussies", emoji:"🌸", desc:"Match pairs of pussies"},
