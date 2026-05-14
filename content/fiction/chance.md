@@ -10,7 +10,7 @@ Two years, five weeks and three days. That was precisely how long it had been si
 
 The memories of that dream came tumbling back into her mind in technicolour. 
 
-***The stranger had bathed her, bathed her and dried her, then bound her gently, wrists behind her back. She could see her naked reflection in the mirror, large breasts, trim waist and ample hips, her chestnut curls partially covering her face. As he trailed his fingers over her nipples, fear and anticipation coursed through her.***
+***The stranger had undressed her, bathed her and dried her, then bound her gently, wrists behind her back. She could see her naked reflection in the mirror, large breasts, trim waist and ample hips, her chestnut curls partially covering her face. As he trailed his fingers over her nipples, fear and anticipation coursed through her.***
 
 [image src="media/img/chance-encounter2.jpeg" alt="Chance Encounter"]
 
