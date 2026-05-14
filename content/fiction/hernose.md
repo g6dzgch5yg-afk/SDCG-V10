@@ -46,7 +46,7 @@ The two deputies agreed to drop it. They left the locker room, as was the depart
 
 The locker room doors closed. Alone, Danni sat down on the bench. She pulled loose the laces and slipped off her running shoes. She then tossed them into the base of the locker.
 
-She touched her nose again gently and thought back to the weekend. She was glad the real reason for her sore face and swollen nose wasn’t obvious. Because Danni didn’t get hurt. It was, instead, her online adult alter-ego cam show, Kelli Tois.
+She touched her nose again gently and thought back to the weekend. She was glad the real reason for her sore face and swollen nose wasn’t obvious. Because Danni didn’t get hurt. It was, instead, her online adult alter-ego cam show, Danni Tois.
 
 ## Two - At The Gym
 
@@ -54,7 +54,7 @@ That weekend, Danni and Anna were taking a breather from their calisthenics exer
 
 Danni sipped her water and patted the sweat off her forehead.
 
-“‘Kelli Tois’ did only so-so this month. More like disappointing, actually. Revenue was lower than it had been, year-over-year. Lowest in three years since I really started putting effort into this thing.”
+“‘Danni Tois’ did only so-so this month. More like disappointing, actually. Revenue was lower than it had been, year-over-year. Lowest in three years since I really started putting effort into this thing.”
 
 Anna was easing her breathing too. Her cheeks were rosy red and her feet were sore from all the moving.
 
@@ -70,7 +70,7 @@ Anna took a long drink.
 
 Anna set aside the bottle and slid her sweaty hands down her shorts.
 
-Danni tucked a loose strand of hair behind her ear. “Hmm, ‘Kelli Tois’ could really use a pick-me-up. I wish I knew someone to help.”
+Danni tucked a loose strand of hair behind her ear. “Hmm, ‘Danni Tois’ could really use a pick-me-up. I wish I knew someone to help.”
 
 Finally, Anna responded.
 
@@ -116,9 +116,9 @@ Anna began again, although slower.
 
 They finished that set and went through the last one. When done, they cooled down with stretches on the yoga mats.
 
-Danni noticed Anna was distant and rejecting the idea of going on Kelli Tois. So Danni took a different approach.
+Danni noticed Anna was distant and rejecting the idea of going on Danni Tois. So Danni took a different approach.
 
-“You know most of the comments on Kelli Tois. I’ve told you about them,” Danni said.
+“You know most of the comments on Danni Tois. I’ve told you about them,” Danni said.
 
 “You tell me all the time—verbatim—so, yea, I guess I do.”
 
@@ -134,7 +134,7 @@ Danni easily leaned forward, grabbing the bottom of her bare foot.
 
 Anna reached out her arms. She remained quiet.
 
-Danni went on. “A subscriber sent the message to my private ‘Kelli Tois’ inbox. It was a request or whatever. Asking us for a personal video—for doing it only for her and it could not be allowed—.”
+Danni went on. “A subscriber sent the message to my private ‘Danni Tois’ inbox. It was a request or whatever. Asking us for a personal video—for doing it only for her and it could not be allowed—.”
 
 Anna sat up. “‘Us’? What’s this ‘us’ thing?”
 
@@ -162,9 +162,9 @@ Anna leaned forward. “What does this ‘subscriber’ actually want?”
 
 ## Three - The Basement Studio
 
-The next day, Anna arrived at Danni’s basement studio. She remembered the gun cabinet and all the good things in it. Anna had immediately purchased Hugo after Danni—Kelli Tois—had pleased her with it.
+The next day, Anna arrived at Danni’s basement studio. She remembered the gun cabinet and all the good things in it. Anna had immediately purchased Hugo after Danni—had pleased her with it.
 
-“It’s empty in here, like the early days of Kelli Tois,” Anna said.
+“It’s empty in here, like the early days of Danni Tois,” Anna said.
 
 “It’s because I have already moved a lot of lighting and cameras to my bedroom. Grab that mic stand and the tripod. Haul them upstairs.”
 
@@ -186,7 +186,7 @@ Danni shuffled into the room behind Anna with her hands full.
 
 Anna picked up a camcorder with an attached mic.
 
-“You’ve invested a lot more money these last months in this ‘Kelli Tois’ thing. You told me it was for a trip to Hawaii and then you’d be done.”
+“You’ve invested a lot more money these last months in this ‘Danni Tois’ thing. You told me it was for a trip to Hawaii and then you’d be done.”
 
 “Maybe Hawaii wasn’t enough. I—we— accomplished the trip. Next, it might be the Outback, maybe New Zealand—the bottom of the world. And this video—this one, single video—may pay for most of the trip.”
 
@@ -242,7 +242,7 @@ Suddenly, Anna was startled at what she heard.
 
 Anna felt awkward but gave a shy wave.
 
-Anna thought Danni was going to be the hostess, Kelli Tois, whose only focus would be the subscriber who commissioned the private video. This was becoming more.
+Anna thought Danni was going to be the hostess, Danni Tois, whose only focus would be the subscriber who commissioned the private video. This was becoming more.
 
 Danni slid her hand down Anna’s back to her butt. She then gave her a light kiss on her cheek. Anna stiffened. But the touch made her body shiver and tingle down to her toes.
 
@@ -268,7 +268,7 @@ She gulped. “Uh-huh?”
 
 “Help me out with this. I want to play with my cunt with you naked. Show me that ass. Those huge tits. Please.”
 
-“What?” Her voice cracked. This had been Danni a half-hour ago. Anna had just witnessed her transform into Kelli Tois.
+“What?” Her voice cracked. This had been Danni a half-hour ago. Anna had just witnessed her transform into Danni Tois.
 
 “Just help. No one except us will see you. And you’ve already bared your big butt before.”
 
@@ -280,7 +280,7 @@ She gulped. “Uh-huh?”
 
 “I’ve wanted to put my mouth on your tits, suck on your nipples.” Danni drove two fingers deep into her pussy. Her thrusts went faster. Her triceps and forearm flexed from the intensity. Danni’s face twisted in the pleasure and desire.
 
-Anna was heated up and struggled against the urge. She didn’t know exactly why she resisted. Danni—Kelli Tois—had done so much already: seen her naked, sexually, not just changing clothes at the gym; played with her ass; gently brushed her finger against her pussy; masturbated her to orgasm.
+Anna was heated up and struggled against the urge. She didn’t know exactly why she resisted. Danni Tois had done so much already: seen her naked, sexually, not just changing clothes at the gym; played with her ass; gently brushed her finger against her pussy; masturbated her to orgasm.
 
 Anna saw Danni ease her face and slow the fingers’ deep thrusts. Danni glared lustfully at her friend.
 
@@ -330,7 +330,7 @@ But Danni hopped on Anna.
 
 Anna licked the pink nipples centered in oval areolas. She began to suck the breasts into her mouth. She nibbled and bit. Danni obviously loved it, moaning and encouraging harder bites.
 
-Anna enjoyed all that was happening—all that she never expected when she arrived at Kelli Tois’s studio. She was supposed to record a video. Now she was on camera.
+Anna enjoyed all that was happening—all that she never expected when she arrived at the Danni Tois studio. She was supposed to record a video. Now she was on camera.
 
 Where was the camera?
 
@@ -338,67 +338,67 @@ She turned her head to look for it.
 
 Thinking again, she noticed the pressure was not on her chest. Instead, there were hands pushing her thighs apart.
 
-Anna shoved Kelli’s face into her lap.
+Anna shoved Danni’s face into her lap.
 
-“Lick it, Kelli. Put your face in my pussy. Let me feel your mouth.”
+“Lick it, Danni. Put your face in my pussy. Let me feel your mouth.”
 
 Anna looked at the standing camera on her left.
 
-“Kelli eats pussy, and I’ve got the sweet pussy. Deep and thick. She gets lost in it.”
+“Danni eats pussy, and I’ve got the sweet pussy. Deep and thick. She gets lost in it.”
 
-Anna closed her legs around Kelli’s head.
+Anna closed her legs around Danni's head.
 
 “Proof.” She winked at the camera and then opened wide again. “Wish you could try.”
 
-Kelli’s head appeared, red-faced, and her chin and mouth were glistening. She ducked again.
+Danni’s head appeared, red-faced, and her chin and mouth were glistening. She ducked again.
 
 “Oh, shit! Fuck!” Anna yelled and raised her hips. Her ass was tight. “Eat me. God, yes, fu—!”
 
-Anna dragged her fingernails up her legs and then down. She pressed Kelli’s head hard into her, not letting the woman pull back.
+Anna dragged her fingernails up her legs and then down. She pressed Danni’s head hard into her, not letting the woman pull back.
 
 Anna felt tickles, flicks, laps, pressured entries, fast, slow, sucking, stretching, tugging.
 
-Suddenly, unexpectedly, Kelli’s tongue touched that one hard-to-find spot. Anna came near to tears. The touch knocked her senseless. Her body flattened out as she came. The orgasm rolled up and down like she was on warm ocean waves. One extra brush of Kelli’s tongue was like a pinprick at that spot.
+Suddenly, unexpectedly, Danni’s tongue touched that one hard-to-find spot. Anna came near to tears. The touch knocked her senseless. Her body flattened out as she came. The orgasm rolled up and down like she was on warm ocean waves. One extra brush of Danni’s tongue was like a pinprick at that spot.
 
-Kelli sat next to Anna, who remained sprawled out.
+Danni sat next to Anna, who remained sprawled out.
 
-“She is such a lover. I want you to get between her legs too,” Anna heard Kelli Tois say to the camera. “Her pussy … Look at me. You can tell.”
+“She is such a lover. I want you to get between her legs too,” Anna heard Danni Tois say to the camera. “Her pussy … Look at me. You can tell.”
 
 At some point in time, Anna wasn’t sure when, a shadow came over her face.
 
-“Now is my turn,” Anna heard Kelli say from somewhere far above her.
+“Now is my turn,” Anna heard Danni say from somewhere far above her.
 
-The shadow darkened like the onset of evening. Then a moistness touched the tip of Anna’s nose. A warm, musty scent filled her nostrils like a hotplate of a favorite childhood dinner. Then Anna struggled to breathe. She gasped. The lovely pussy moved up the bridge of her nose and down. Anna stuck out her tongue. The hot flesh was tasty. Anna flapped her tongue. The faster she moved the quicker Kelli’s pussy shifted—up and down, side to side, back and forth. Soon, Anna’s face was glistening like Kelli’s shined.
+The shadow darkened like the onset of evening. Then a moistness touched the tip of Anna’s nose. A warm, musty scent filled her nostrils like a hotplate of a favorite childhood dinner. Then Anna struggled to breathe. She gasped. The lovely pussy moved up the bridge of her nose and down. Anna stuck out her tongue. The hot flesh was tasty. Anna flapped her tongue. The faster she moved the quicker Danni’s pussy shifted—up and down, side to side, back and forth. Soon, Anna’s face was glistening like Danni’s shined.
 
-In a few minutes, Kelli had crashed into a loud orgasm. She was flattened out. Purring and muttering.
+In a few minutes, Danni had crashed into a loud orgasm. She was flattened out. Purring and muttering.
 
 Anna took over.
 
 “Now it’s my turn. Put your face at the foot of the bed.”
 
-Kelli moved slowly but soon was in place.
+Danni moved slowly but soon was in place.
 
 Anna faced back to the camera and settled on all fours. She looked to the side camera.
 
-“Kelli likes to get an ass in her face. Pounded by large asscheeks. Do you?”
+“Danni likes to get an ass in her face. Pounded by large asscheeks. Do you?”
 
-Anna shook her ass, letting the flesh jiggle and clap. She then dropped her ass onto Kelli’s face. She kept it there briefly. She popped up to make her ass clap again for a few shakes. She dropped onto Kelli’s face once more. She shifted back and forth as if settling onto a chair.
+Anna shook her ass, letting the flesh jiggle and clap. She then dropped her ass onto Danni’s face. She kept it there briefly. She popped up to make her ass clap again for a few shakes. She dropped onto Danni’s face once more. She shifted back and forth as if settling onto a chair.
 
 She popped up and dropped down again.
 
-Kelli attempted to speak, encourage, but Anna would drop when she tried to speak. Kelli’s arms sometimes wrapped around Anna’s thick thighs, but they also pushed up at the base of Anna’s weighty ass.
+Danni attempted to speak, encourage, but Anna would drop when she tried to speak. Danni’s arms sometimes wrapped around Anna’s thick thighs, but they also pushed up at the base of Anna’s weighty ass.
 
 “You like this?” Anna called over her shoulder.
 
-As Kelli attempted to answer, Anna dropped.
+As Danni attempted to answer, Anna dropped.
 
-Kelli’s face would disappear beneath Anna. She would let her see the lights for only a moment.
+Danni’s face would disappear beneath Anna. She would let her see the lights for only a moment.
 
-On her last drop, Anna rubbed deeply, side to side. It twisted Kelli’s neck and head. Anna heard a muffled moan, but it wasn’t as much pleasurable. Next there was a heave that pushed Anna flat. Kelli sat up, holding her nose.
+On her last drop, Anna rubbed deeply, side to side. It twisted Danni’s neck and head. Anna heard a muffled moan, but it wasn’t as much pleasurable. Next there was a heave that pushed Anna flat. Danni sat up, holding her nose.
 
-A few moments later, Kelli turned to the camera, her hands rubbing on Anna’s thigh. “Glad we could share our secret with you.”
+A few moments later, Danni turned to the camera, her hands rubbing on Anna’s thigh. “Glad we could share our secret with you.”
 
-Kelli paused, like she was ending a livestream. Then she returned to Danni. “You didn’t hold back on that last part. I was not expecting that last pounding.”
+Danni paused, like she was ending a livestream. Then she returned to Danni. “You didn’t hold back on that last part. I was not expecting that last pounding.”
 
 “I didn’t either.”
 
