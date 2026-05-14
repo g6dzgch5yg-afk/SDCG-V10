@@ -28,6 +28,15 @@ const HANDBOOK_ITEMS = [
     "contentFile": "content/handbook/test.md",
     "sections": []
   },
+ {
+    "letter": "O",
+    "title": "Oral Sex - Anilingus",
+    "img": "h02_cunnilingus.svg",
+    "sub1": "Oral sex guide to licking ass.",
+    "sub2": "How to eat ass like a pro.",
+    "contentFile": "content/handbook/or-an.md",
+    "sections": []
+  },
   {
     "letter": "O",
     "title": "Oral Sex - Cunnilingus",
