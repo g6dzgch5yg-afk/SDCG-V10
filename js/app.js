@@ -798,9 +798,11 @@ function App(){
       {screen==="position"&&posIdx!=null&&(()=>{
         const isCouples=posMode==="couples";
         const pos=(isCouples?POSITIONS:posMode==="threesomes"?THREESOME_POSITIONS:FOURSOME_POSITIONS)[posIdx];
-        const hasVid=isCouples&&!!pos.vid&&!posVidErr;
+        const hasGif=isCouples&&!!pos.gif;
+        const hasVid=isCouples&&!hasGif&&!!pos.vid&&!posVidErr;
         const imgUrl=isCouples?`${IMG}${pos.img}.png`:null;
         const vidUrl=isCouples&&pos.vid?`${VID}${pos.vid}.mp4`:null;
+        const gifUrl=isCouples&&pos.gif?`${GIF}${pos.gif}.gif`:null;
         const ac="#c87a00";
         const modeLabel=posMode==="threesomes"?"Threesome":posMode==="foursomes"?"Foursome":"Couple";
         return(
@@ -814,7 +816,10 @@ function App(){
               
               {isCouples?(
   <div style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",background:"#050505",position:"relative",minHeight:"260px"}}>
-    {hasVid?(
+    {hasGif?(
+      <img key={gifUrl} src={gifUrl} alt={pos.n}
+        style={{maxWidth:"100%",maxHeight:"55vh",objectFit:"contain",display:"block"}}/>
+    ):hasVid?(
       <video key={vidUrl} autoPlay loop muted playsInline onError={()=>setPosVidErr(true)}
         style={{maxWidth:"100%",maxHeight:"55vh",objectFit:"contain",display:"block"}}>
         <source src={vidUrl} type="video/mp4"/>
@@ -823,7 +828,10 @@ function App(){
       <img key={imgUrl} src={imgUrl} alt={pos.n}
         style={{maxWidth:"100%",maxHeight:"55vh",objectFit:"contain",display:"block"}}/>
     )}
-    {hasVid&&(
+    {hasGif&&(
+      <div style={{position:"absolute",top:"10px",right:"10px",background:`${ac}cc`,borderRadius:"20px",padding:"3px 10px",fontSize:"11px",color:"#fff",fontWeight:"bold",letterSpacing:"1px"}}>GIF</div>
+    )}
+    {!hasGif&&hasVid&&(
       <div style={{position:"absolute",top:"10px",right:"10px",background:`${ac}cc`,borderRadius:"20px",padding:"3px 10px",fontSize:"11px",color:"#fff",fontWeight:"bold",letterSpacing:"1px"}}>▶ ANIMATED</div>
     )}
   </div>
