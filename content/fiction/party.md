@@ -1,8 +1,6 @@
-# Party Games - An Erotic Story
+## One - Claimed
 
-Claudia Thomas
-
-Last updated:February 14, 2026
+img1 party-stand
 
 It was not so much that he interrupted our conversation, he simply joined us. He slipped his arm around my wife’s waist and let his hand slide immediately under her thong to her ass cheek. She reacted in no way at all as if this was everyday normal behaviour.
 
@@ -33,6 +31,10 @@ Silence had descended on the room and all eyes were on the conversation.
 I was now fully erect watching this developing situation.
 
 ‘Kindly hand your thong to your husband, you won’t be needing it again tonight’ he told my wife.
+
+## Two - The Observation Room
+
+img2 - party-hand
 
 She stepped back a bit into him and out of her thong which was at her feet. As she bent forward to pick them up, the host moved his hand to her ass and gently inserted a fingertip into her bum.
 
@@ -87,6 +89,8 @@ The host may turn off your visuals if he decides, but you will still have audio.
 
 At your next event here, your wife Claudine, will be excluded from selection by the host. She will again qualify for personal time with him at any subsequent party you attend.
 
+## Three - On Screen
+
 ‘Enjoy the Observation Room’ she said finally.
 
 ‘I will’ I replied confidently, my erection even harder after her choice of where to hold the remote control during her demonstration and the anticipation of how my wife would perform.
@@ -117,6 +121,8 @@ Sure, it would be better to watch her with another woman, but this was her turn 
 
 I started gently rubbing my erection and soon my cock was slippery in my hand. I could see the button on the controls to share the experience. Since I had the sensation of been totally used by being made to watch my wife fucking another guy, maybe I should go all in and share the experience? Not yet.
 
+img3 - party-screen
+
 Brian and Claudine appeared on one of the screens. My wife was still fully nude, that had not changed. The only addition was a glass of wine. The host had his arm around her waist with his hand gently resting on her ass.
 
 There was a large bulge in his shorts clearly indicating his intention with my wife.
@@ -132,6 +138,8 @@ On the next encounter, I saw my wife cover her breasts with her hands and take a
 From the camera angle, I could not see the reason for the delay, but my wife and the host were engaging in a longer conversation with these guests.
 
 Once they shifted a bit I could finally see the reason for the surprise. Before Brian and my fully nude wife stood her boss and his wife, Don and Melissa.
+
+## Four - Extra Guests
 
 Claudine had mentioned to me at home that her boss was often staring at her at work and took any opportunity to work directly with her.
 
@@ -155,6 +163,8 @@ While she was doing this he shrugged his shirt off. My wife eyed his erection hu
 
 He nodded at her briefly and she took his erection in her mouth and starting devouring it without hesitation, something she never did for me I thought eyeing my own ever hardening erection. I was rubbing steadily now.
 
+img4 - party-blow
+
 The host let his head back as he enjoyed the fruits of my wife’s efforts. After several minutes of total pleasure, he pulled my wife’s head back and withdrew his drenched cock.
 
 She looked up confused, perhaps thinking she had not done well, only to be greeted by line after line of milky semen gushing onto her face. After enjoying every last pulse of his orgasm, the host wiped his cock on my wife’s tits back and forth to make sure he was again comfortable.
@@ -162,6 +172,8 @@ She looked up confused, perhaps thinking she had not done well, only to be greet
 ‘Good’ he announced to the crowd.
 
 ‘But not good enough’ he added with a smile.
+
+## Five - Whipped
 
 My wife, her face and tits covered in his semen, seemed confused, but also looked eager for more. She seemed oblivious to her demeanour and the watching crowd and was only interested in her own pleasure now. There was no longer any other thought – just her sexual desire. She wanted more.
 
@@ -176,6 +188,8 @@ The host meanwhile was providing an explanation of the whipping technique used b
 I could not see the smile on my wife’s face, but I was certain it was there.
 
 ‘Please continue’ the host requested of Melissa. She pushed her sleeves a little higher and got to work on my wife’s ass. Behind her Don loudly enjoyed his orgasm as his wife kept whipping.
+
+img5-party-whip
 
 What a spectacle. Before Melissa could develop a sweat, Brian stopped the performance rather suddenly, untied my red assed woman and helped her off the bed. He replaced the glass in her hand and turned to address the crowd.
 
@@ -201,11 +215,17 @@ My wife’s orgasm seemed very loud with no other sounds audible. Only the grunt
 
 Then, as if bored, he quickened his pace and exploded inside Claudine filling her full of his energy. My wife lay there still enjoying the aftermath of her orgasm and his with a mixture of both of them coming out of her pussy.
 
+img6 - party-drip
+
 He moved up the bed again and wiped his dripping penis on her tits and slapped them suddenly watching them move from side to side. He smiled and did it again, but harder. They too began to redden.
 
 Watching my wife getting her semen covered tits slapped brought me over the edge and my cock pulsated and sent line after line of hot semen on the glass wall in front of me fully visible to both my wife and the host.
 
-He flipped her over without a word. From under the pillow he withdrew a large butt plug and inserted it into Claudine’s ass with ease.
+He flipped her over without a word. From under the pillow he withdrew a large butt plug, applied lube and inserted it into Claudine’s ass with ease.
+
+img7-party-plug
+
+## Six - Leashed & Returned
 
 Brian graciously extended a hand to help her off the bed. ‘Now’ he said, ‘I must return you to your husband!’
 
@@ -222,6 +242,8 @@ Finally they arrived to where I was waiting beside the drinks table outside the 
 ‘I hope you enjoyed our party’ the host said to me as he stood with his arm around my still nude wife.
 
 ‘I absolutely did’ I replied taking the leash he offered.
+
+img8 -party-leash
 
 ‘Good, so did I’ he said moving my wife towards me with this hand on her nude red ass.
 
