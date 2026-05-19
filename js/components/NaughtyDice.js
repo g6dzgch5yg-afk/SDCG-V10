@@ -383,13 +383,13 @@ function NaughtyDiceScreen({ onBack }) {
             <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:"4px" }}>
               <span className="nd-result-pop" style={{
                 fontFamily:"Georgia,serif", fontSize:"1.55rem", fontWeight:"bold",
-                color:"#a060d0", letterSpacing:"0.05em", display:"block",
-              }}>{result.bp.emoji} {result.bp.label}</span>
-              <span style={{ fontSize:"11px", color:"#5a3848", textTransform:"uppercase", letterSpacing:"0.18em" }}>→</span>
-              <span className="nd-result-pop2" style={{
-                fontFamily:"Georgia,serif", fontSize:"1.55rem", fontWeight:"bold",
                 color:"#c9446a", letterSpacing:"0.05em", display:"block",
               }}>{result.ac.emoji} {result.ac.label}</span>
+              <span style={{ fontSize:"11px", color:"#5a3848", fontFamily:"Georgia,serif", fontStyle:"italic", letterSpacing:"0.12em" }}>your lover's</span>
+              <span className="nd-result-pop2" style={{
+                fontFamily:"Georgia,serif", fontSize:"1.55rem", fontWeight:"bold",
+                color:"#a060d0", letterSpacing:"0.05em", display:"block",
+              }}>{result.bp.emoji} {result.bp.label}</span>
             </div>
           )}
         </div>
