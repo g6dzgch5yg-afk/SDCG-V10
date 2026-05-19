@@ -45,6 +45,9 @@ function App(){
   const [libraryLoading,setLibraryLoading]=useState(false);
   const [libraryError,setLibraryError]=useState("");
 
+  // RolePlay state
+  const [rpScenario,setRpScenario]=useState(null);
+
   // Tag preferences – one object per player; all tags accepted by default
   const mkDefaultTagPrefs=()=>[0,1].map(()=>Object.fromEntries(TAGS.map(t=>[t.id,true])));
   const [tagPrefs,setTagPrefs]=useState(mkDefaultTagPrefs);
@@ -350,6 +353,12 @@ function App(){
               <span>🍒</span><span>XXX Matching Pairs Game</span>
             </div>
             <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>Flip and match pairs of naughty picture cards. Can you clear the board?</p>
+          </button>
+          <button className="btn" onClick={()=>setScreen("rolePlay")} style={{background:"#4A0404",border:"1px solid #252525",width:"100%",marginTop:"12px",padding:"14px 16px",display:"flex",flexDirection:"column",alignItems:"flex-start",textAlign:"left"}}>
+            <div style={{display:"flex",alignItems:"center",gap:"8px",color:"#888",fontSize:"19px",fontWeight:"bold"}}>
+              <span>🎭</span><span>Role Play Scenarios</span>
+            </div>
+            <p style={{color:"#4a4a4a",fontSize:"12px",margin:"6px 0 0",lineHeight:"1.5",paddingLeft:"2px"}}>31 curated adult role play scenarios for 2, 3, or 4 players. Filter by intensity, props, and gender combo.</p>
           </button>
         </div>
       )}
@@ -1126,6 +1135,23 @@ function App(){
             ← Back to Stories
           </button>
         </div>
+      )}
+
+      {/* ══ ROLE PLAY LIST ══ */}
+      {screen==="rolePlay"&&!rpScenario&&(
+        <RPListScreen
+          onBack={()=>setScreen("setup")}
+          onSelectScenario={s=>{setRpScenario(s);}}
+        />
+      )}
+
+      {/* ══ ROLE PLAY DETAIL ══ */}
+      {screen==="rolePlay"&&rpScenario&&(
+        <RPDetailScreen
+          scenario={rpScenario}
+          selectedProps={[]}
+          onBack={()=>setRpScenario(null)}
+        />
       )}
 
       {/* ══ MEMORY GAME ══ */}
