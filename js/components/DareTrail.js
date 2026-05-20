@@ -672,10 +672,17 @@ function DareTrailGame({ config, onNewGame }) {
 
       {/* Controls */}
       <div style={{display:"flex",justifyContent:"center",gap:"10px",padding:"4px 0 8px",flexWrap:"wrap"}}>
-        <button disabled={rolling||(st?.awaitingTask)} onClick={doRoll}
-          style={{fontFamily:"Georgia,serif",fontSize:"15px",padding:"10px 28px",borderRadius:"50px",border:"none",cursor:(rolling||st?.awaitingTask)?"not-allowed":"pointer",background:`linear-gradient(135deg,${curC.main},${curC.light})`,color:"#fff",opacity:(rolling||st?.awaitingTask)?0.6:1,boxShadow:`0 4px 18px ${curC.main}55`,transition:"all .2s"}}>
-          {rolling?"✨ Rolling…":"🎲 Roll"}
-        </button>
+        {!rolling&&(
+          <button disabled={st?.awaitingTask} onClick={doRoll}
+            style={{fontFamily:"Georgia,serif",fontSize:"15px",padding:"10px 28px",borderRadius:"50px",border:"none",cursor:st?.awaitingTask?"not-allowed":"pointer",background:`linear-gradient(135deg,${curC.main},${curC.light})`,color:"#fff",opacity:st?.awaitingTask?0.6:1,boxShadow:`0 4px 18px ${curC.main}55`,transition:"all .2s"}}>
+            🎲 Roll
+          </button>
+        )}
+        {rolling&&(
+          <div style={{fontFamily:"Georgia,serif",fontSize:"15px",padding:"10px 28px",borderRadius:"50px",background:`linear-gradient(135deg,${curC.main}99,${curC.light}66)`,color:"#fff",opacity:0.8}}>
+            ✨ Rolling…
+          </div>
+        )}
         <button onClick={onNewGame}
           style={{fontFamily:"inherit",fontSize:"13px",padding:"10px 18px",borderRadius:"50px",border:"1px solid #2a1a28",background:"#0e0810",color:"#6a3a50",cursor:"pointer"}}>
           ↺ New Game
