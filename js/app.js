@@ -174,22 +174,34 @@ function App(){
   }
   function startPosition(){
     const mode=posMode;
+    const arr=mode==="threesomes"?THREESOME_POSITIONS:mode==="foursomes"?FOURSOME_POSITIONS:POSITIONS;
     setPosQueues(prev=>{
-      const{next,remaining}=dequeuePosition(prev,mode,null);
+      let q=[...(prev[mode]||[])];
+      if(q.length===0) q=shuffleIndices(arr.length);
+      const next=q.shift();
       setPosIdx(next);
-      return{...prev,[mode]:remaining};
+      setPosVidErr(false);
+      setScreen("position");
+      return{...prev,[mode]:q};
     });
-    setPosVidErr(false);
-    setScreen("position");
   }
   function nextPosition(){
     const mode=posMode;
+    const arr=mode==="threesomes"?THREESOME_POSITIONS:mode==="foursomes"?FOURSOME_POSITIONS:POSITIONS;
     setPosQueues(prev=>{
-      const{next,remaining}=dequeuePosition(prev,mode,posIdx);
+      let q=[...(prev[mode]||[])];
+      if(q.length===0){
+        q=shuffleIndices(arr.length);
+        if(q.length>1&&posIdx!=null&&q[0]===posIdx){
+          const j=Math.floor(Math.random()*(q.length-1))+1;
+          [q[0],q[j]]=[q[j],q[0]];
+        }
+      }
+      const next=q.shift();
       setPosIdx(next);
-      return{...prev,[mode]:remaining};
+      setPosVidErr(false);
+      return{...prev,[mode]:q};
     });
-    setPosVidErr(false);
   }
 	
 	function openTruthCards(){
@@ -887,7 +899,7 @@ function App(){
         return(
           <div style={{animation:"fadeUp .35s ease",maxWidth:"520px",width:"100%",display:"flex",flexDirection:"column",minHeight:"calc(100vh - 40px)"}}>
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"16px"}}>
-              <button onClick={()=>setScreen("positionSelect")} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
+              <button onClick={()=>{ setPosIdx(null); setPosVidErr(false); setScreen("positionSelect"); }} style={{background:"#141414",border:"1px solid #222",color:"#888",borderRadius:"8px",padding:"7px 13px",cursor:"pointer",fontFamily:"inherit",fontSize:"13px"}}>← Back</button>
               <div style={{textAlign:"center"}}>
                 <div style={{color:"#555",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",marginBottom:"2px"}}>Hot Extras</div>
                 <h2 style={{color:"#e8cdd8",fontSize:"1.3rem",margin:0,fontFamily:"Georgia,serif",fontWeight:"normal"}}>Sex <span style={{color:"#c9446a",fontStyle:"italic"}}>Positions</span></h2>
