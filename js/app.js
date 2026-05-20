@@ -22,6 +22,10 @@ function App(){
   // Dice state
   const [diceResult,setDiceResult]=useState(null);
   const [diceRolling,setDiceRolling]=useState(false);
+  // Coin state
+  const [coinResult,setCoinResult]=useState(null);
+  const [coinFlipping,setCoinFlipping]=useState(false);
+  const [coinKey,setCoinKey]=useState(0);
 
   // Position state
   const [posIdx,setPosIdx]=useState(null);
@@ -134,6 +138,16 @@ function App(){
       setDiceRolling(false);
     },750);
   }
+  function flipCoin(){
+    if(coinFlipping)return;
+    setCoinFlipping(true);
+    setCoinResult(null);
+    setCoinKey(k=>k+1);
+    setTimeout(()=>{
+      setCoinResult(Math.random()<0.5?"Heads":"Tails");
+      setCoinFlipping(false);
+    },900);
+  }
   // Shuffle queues — one per category, refilled when exhausted
   const [posQueues,setPosQueues]=useState({couples:[],threesomes:[],foursomes:[]});
 
@@ -245,6 +259,7 @@ function App(){
     setCard(picked);
     setTimerTotal(dur);setTimeLeft(dur);setTimerOn(false);setTimerDone(false);
     setDiceResult(null);setDiceRolling(false);
+    setCoinResult(null);setCoinFlipping(false);setCoinKey(0);
     setFlipped(false);
     setTimeout(()=>{
       setFlipped(true);
@@ -286,6 +301,12 @@ function App(){
         @keyframes dicePop{0%{transform:scale(0.7);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
         .dice-btn{cursor:pointer;background:none;border:none;padding:0;-webkit-tap-highlight-color:transparent;border-radius:14px;}
         .dice-btn:active{transform:scale(0.94)}
+        @keyframes coinSpin{0%{transform:perspective(300px) rotateY(0deg) scale(1)}25%{transform:perspective(300px) rotateY(540deg) scale(1.18)}60%{transform:perspective(300px) rotateY(1260deg) scale(1.08)}80%{transform:perspective(300px) rotateY(1620deg) scale(1.03)}100%{transform:perspective(300px) rotateY(1800deg) scale(1)}}
+        @keyframes coinPop{0%{transform:scale(0.6);opacity:0}60%{transform:scale(1.2)}100%{transform:scale(1);opacity:1}}
+        .coin-btn{cursor:pointer;background:none;border:none;padding:0;-webkit-tap-highlight-color:transparent;border-radius:50%;}
+        .coin-btn:active{transform:scale(0.92)}
+        .coin-spinning{animation:coinSpin 0.9s cubic-bezier(0.25,0.1,0.25,1) forwards;}
+        .coin-popped{animation:coinPop 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards;}
         .btn{cursor:pointer;border:none;border-radius:12px;font-family:inherit;font-weight:bold;transition:transform .15s,box-shadow .15s;-webkit-tap-highlight-color:transparent}
         .btn:active{transform:scale(0.97)}
         .pill{cursor:pointer;border-radius:20px;font-family:inherit;font-size:12px;font-weight:bold;padding:6px 13px;transition:all .18s;border:1.5px solid transparent;-webkit-tap-highlight-color:transparent}
@@ -713,6 +734,35 @@ function App(){
             <div style={{fontSize:"64px",marginBottom:"20px",lineHeight:1}}>{card.emoji}</div>
             <p style={{color:"#f0f0f0",fontSize:"1.5rem",fontWeight:"bold",lineHeight:"1.5",margin:0,textAlign:"center"}}>{resolveText(card.text, current, players)}</p>
 
+            {/* ── Coin Flip ── */}
+            {/coin/i.test(card.text)&&(
+              <div style={{marginTop:"24px",display:"flex",flexDirection:"column",alignItems:"center",gap:"10px"}}>
+                <p style={{color:"#555",margin:0,fontSize:"11px",letterSpacing:"1px",textTransform:"uppercase"}}>Tap to flip the coin</p>
+                <button className="coin-btn" onClick={flipCoin} aria-label="Flip coin">
+                  <div key={coinKey} style={{width:"72px",height:"72px",position:"relative"}} className={coinFlipping?"coin-spinning":coinResult!=null?"coin-popped":""}>
+                    {/* Idle or result face */}
+                    <svg width="72" height="72" viewBox="0 0 100 100" style={{display:"block",filter:`drop-shadow(0 0 8px ${ms.color}99)`}}>
+                      <circle cx="50" cy="50" r="46" fill="#1a1510" stroke={ms.color} strokeWidth="3"/>
+                      <circle cx="50" cy="50" r="38" fill="none" stroke={ms.color} strokeWidth="1.5" strokeOpacity="0.3"/>
+                      {coinResult===null&&<text x="50" y="62" textAnchor="middle" fontSize="36" fontFamily="serif" fill={ms.color}>🪙</text>}
+                      {coinResult==="Heads"&&<>
+                        <text x="50" y="42" textAnchor="middle" fontSize="11" fontWeight="bold" letterSpacing="2" fill={ms.color} fontFamily="inherit" textTransform="uppercase">HEADS</text>
+                        <text x="50" y="68" textAnchor="middle" fontSize="28" fontFamily="serif" fill={ms.color}>👑</text>
+                      </>}
+                      {coinResult==="Tails"&&<>
+                        <text x="50" y="42" textAnchor="middle" fontSize="11" fontWeight="bold" letterSpacing="2" fill={ms.color} fontFamily="inherit">TAILS</text>
+                        <text x="50" y="68" textAnchor="middle" fontSize="28" fontFamily="serif" fill={ms.color}>✦</text>
+                      </>}
+                    </svg>
+                  </div>
+                </button>
+                {coinResult!=null&&!coinFlipping&&(
+                  <p style={{color:ms.color,margin:0,fontSize:"18px",fontWeight:"bold",textShadow:`0 0 16px ${ms.color}`}}>
+                    {coinResult}!
+                  </p>
+                )}
+              </div>
+            )}
             {/* ── Dice ── */}
             {/dice/i.test(card.text)&&(
               <div style={{marginTop:"24px",display:"flex",flexDirection:"column",alignItems:"center",gap:"10px"}}>
